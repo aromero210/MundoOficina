@@ -1,0 +1,635 @@
+/* ===================================================
+   CONFIGURACIÓN GLOBAL
+   =================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f5f6f8;
+    color: #333;
+    line-height: 1.4;
+}
+
+/* ===================================================
+   HEADER / NAVEGACIÓN PRINCIPAL
+   =================================================== */
+
+.header {
+    background-image: url("img/header.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 15px 40px;
+}
+
+.header-contenido {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+}
+
+/* LOGO */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 60px;
+    height: auto;
+}
+
+/* MENÚ DE NAVEGACIÓN */
+
+.menu {
+    justify-self: center;
+    display: flex;
+    gap: 30px;
+}
+
+.menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 6px;
+    transition: opacity 0.2s ease;
+}
+
+.menu a:hover {
+    opacity: 0.85;
+}
+
+/* ÍTEM ACTIVO DEL MENÚ */
+
+.menu a.activo::after {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+}
+
+/* ACCIONES (ICONOS) */
+
+.acciones {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icono {
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+    opacity: 0.9;
+    transition: opacity 0.2s ease;
+}
+
+.icono:hover {
+    opacity: 1;
+}
+
+/* ===================================================
+   HERO (HOME)
+   =================================================== */
+
+.hero {
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding-left: 80px;
+}
+
+.hero-texto {
+    color: #ffffff;
+    max-width: 500px;
+}
+
+.hero-texto h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.hero-texto p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.hero-botones {
+    display: flex;
+    gap: 15px;
+}
+
+/* ===================================================
+   BOTONES (REUTILIZABLES)
+   =================================================== */
+
+.btn {
+    display: inline-block;
+    padding: 12px 22px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn-blanco {
+    background-color: #ffffff;
+    color: #0d1b2a;
+}
+
+.btn-azul {
+    background-color: #1d4ed8;
+    color: #ffffff;
+}
+
+/* ===================================================
+   BENEFICIOS
+   =================================================== */
+
+.beneficios {
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffffff;
+    padding: 40px 20px;
+}
+
+.beneficio {
+    text-align: center;
+    max-width: 220px;
+}
+
+.beneficio img {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+/* ===================================================
+   CATEGORÍAS DESTACADAS
+   =================================================== */
+
+.categorias {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.categorias h2 {
+    margin-bottom: 30px;
+    color: #0d1b2a;
+}
+
+.grid-categorias {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.categoria {
+    background-color: #ffffff;
+    border-radius: 6px;
+    overflow: hidden;
+    font-weight: bold;
+}
+
+.categoria img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.categoria span {
+    display: block;
+    padding: 15px;
+}
+
+/* ===================================================
+   PRODUCTOS DESTACADOS
+   =================================================== */
+
+.productos {
+    background-color: #ffffff;
+    padding: 60px 40px;
+}
+
+.productos h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.grid-productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.producto {
+    background-color: #f5f6f8;
+    padding: 20px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.producto img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.precio {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* ===================================================
+   BANNER PROMOCIONAL
+   =================================================== */
+
+.banner-descuentos {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner-descuentos h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+/* ===================================================
+   HERO CONTACTO
+   =================================================== */
+
+.hero-contacto {
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding-left: 80px;
+}
+
+.hero-contacto .hero-texto {
+    max-width: 600px;
+}
+
+/* ===================================================
+   SECCIÓN CONTACTO
+   =================================================== */
+
+.contacto {
+    background-color: #f5f6f8;
+    padding: 60px 40px;
+}
+
+.contacto-contenido {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+/* INFO CONTACTO */
+
+.contacto-info {
+    background-color: #0d1b2a;
+    color: #ffffff;
+    padding: 30px;
+    border-radius: 6px;
+}
+
+.contacto-info h2 {
+    margin-bottom: 25px;
+}
+
+.info-item {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.info-item i {
+    font-size: 20px;
+    margin-top: 4px;
+}
+
+.redes {
+    margin-top: 20px;
+}
+
+.redes a {
+    color: #ffffff;
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+/* FORMULARIO CONTACTO */
+
+.contacto-formulario {
+    background-color: #0d1b2a;
+    padding: 30px;
+    border-radius: 6px;
+}
+
+.contacto-formulario h2 {
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.contacto-formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contacto-formulario input,
+.contacto-formulario textarea {
+    padding: 12px;
+    border-radius: 4px;
+    border: 1px solid #cccccc;
+    font-size: 15px;
+}
+
+/* ===================================================
+   FOOTER
+   =================================================== */
+
+.footer {
+    background-image: url("img/header.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 15px 40px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* ===================================================
+   HERO PRODUCTOS
+   =================================================== */
+
+.hero-productos {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding-left: 80px;
+}
+
+/* ===================================================
+   LISTADO DE PRODUCTOS
+   =================================================== */
+
+.productos-listado {
+    padding: 60px 40px;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* FILTROS */
+
+.filtros {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 6px;
+}
+
+.filtros h3 {
+    margin-bottom: 20px;
+    color: #0d1b2a;
+}
+
+.filtros ul {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.filtros li {
+    margin-bottom: 8px;
+}
+
+.filtros a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.filtros a:hover {
+    color: #1d4ed8;
+}
+
+.filtros h4 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #0d1b2a;
+    text-transform: uppercase;
+}
+
+.productos-listado .grid-productos {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* VER TODOS */
+
+.ver-todos {
+    font-weight: bold;
+    color: #1d4ed8;
+}
+
+/* ===================================================
+   HERO OFERTAS
+   =================================================== */
+
+.hero-ofertas {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding-left: 80px;
+}
+
+/* ===================================================
+   OFERTAS
+   =================================================== */
+
+.ofertas {
+    background-color: #ffffff;
+    padding: 60px 40px;
+}
+
+.ofertas h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.producto.oferta {
+    position: relative;
+}
+
+.badge-descuento {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: #dc2626;
+    color: #ffffff;
+    padding: 6px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.precio-anterior {
+    font-size: 14px;
+    color: #777;
+    text-decoration: line-through;
+}
+
+/* ===================================================
+   BANNER OFERTAS
+   =================================================== */
+
+.banner-ofertas {
+    height: 260px;
+    background-color: #0d1b2a;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+/* ===================================================
+   HERO NOSOTROS
+   =================================================== */
+
+.hero-nosotros {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding-left: 80px;
+}
+
+/* ===================================================
+   NOSOTROS
+   =================================================== */
+
+.nosotros {
+    background-color: #ffffff;
+    padding: 60px 40px;
+}
+
+.nosotros-contenido {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.nosotros-texto h2 {
+    margin-bottom: 20px;
+}
+
+.nosotros-texto p {
+    margin-bottom: 15px;
+}
+
+.nosotros-imagen img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+/* ===================================================
+   VALORES
+   =================================================== */
+
+.valores {
+    background-color: #f5f6f8;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.grid-valores {
+    max-width: 1000px;
+    margin: 40px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.valor {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 6px;
+}
+
+.valor i {
+    font-size: 30px;
+    color: #1d4ed8;
+    margin-bottom: 15px;
+}
+
+/* ===================================================
+   CONFIANZA
+   =================================================== */
+
+.confianza {
+    height: 280px;
+    background-color: #0d1b2a;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+}
+/* ===================================================
+   HERO GENERICOS - CORRECCIÓN CONTRASTE
+   =================================================== */
+
+.hero-productos,
+.hero-ofertas,
+.hero-nosotros {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+

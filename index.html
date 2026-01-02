@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- ===================================================
+         CONFIGURACIÓN BÁSICA DEL DOCUMENTO
+         =================================================== -->
+    <meta charset="UTF-8">
+    <title>MundoOficina | Inicio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===================================================
+         HOJAS DE ESTILO
+         =================================================== -->
+    <!-- Estilos principales del sitio -->
+    <link rel="stylesheet" href="estilos.css">
+
+    <!-- Iconos Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ===================================================
+     HEADER / NAVEGACIÓN PRINCIPAL
+     Este bloque se reutiliza en todas las páginas
+=================================================== -->
+    <header class="header">
+        <div class="header-contenido">
+
+            <!-- Logo y nombre de marca -->
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="Logo MundoOficina">
+                <span>MundoOficina</span>
+            </a>
+
+            <!-- Menú de navegación principal -->
+            <nav class="menu" aria-label="Navegación principal">
+                <a href="index.html" class="activo" title="Inicio">Inicio</a>
+                <a href="productos.html" title="Productos">Productos</a>
+                <a href="ofertas.html" title="Ofertas">Ofertas</a>
+                <a href="nosotros.html" title="Nosotros">Nosotros</a>
+                <a href="contacto.html" title="Contacto">Contacto</a>
+            </nav>
+
+            <!-- Acciones rápidas (íconos) -->
+            <div class="acciones">
+                <a href="#" class="icono" aria-label="Buscar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+                <a href="#" class="icono" aria-label="Cuenta de usuario">
+                    <i class="fa-regular fa-user"></i>
+                </a>
+                <a href="#" class="icono" aria-label="Carrito de compras">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- ===================================================
+     HERO PRINCIPAL
+     Imagen destacada con mensaje comercial
+     La imagen se define inline para permitir
+     reutilizar la clase .hero en otras páginas
+=================================================== -->
+    <section class="hero" style="background-image: url('img/hero.png');">
+        <div class="hero-texto">
+            <h1>Todo para tu oficina</h1>
+            <p>Los mejores artículos de librería y oficina</p>
+
+            <!-- Llamadas a la acción principales -->
+            <div class="hero-botones">
+                <a href="productos.html" class="btn btn-blanco">Ver productos</a>
+                <a href="ofertas.html" class="btn btn-azul">Ofertas especiales</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================================
+     BENEFICIOS / DIFERENCIALES
+=================================================== -->
+    <section class="beneficios">
+
+        <div class="beneficio">
+            <img src="img/icon-envio.png" alt="Envío rápido">
+            <h3>Envío rápido</h3>
+            <p>Entregas en 24–48 horas</p>
+        </div>
+
+        <div class="beneficio">
+            <img src="img/icon-soporte.png" alt="Atención al cliente">
+            <h3>Atención al cliente</h3>
+            <p>Soporte personalizado</p>
+        </div>
+
+        <div class="beneficio">
+            <img src="img/icon-seguridad.png" alt="Compras seguras">
+            <h3>Compras seguras</h3>
+            <p>Pago 100% seguro</p>
+        </div>
+
+    </section>
+
+    <!-- ===================================================
+     CATEGORÍAS DESTACADAS
+=================================================== -->
+    <section class="categorias">
+        <h2>Categorías destacadas</h2>
+
+        <div class="grid-categorias">
+
+            <article class="categoria">
+                <img src="img/cat-papeleria.png" alt="Papelería">
+                <span>Papelería</span>
+            </article>
+
+            <article class="categoria">
+                <img src="img/cat-escritorio.png" alt="Artículos de escritorio">
+                <span>Escritorio</span>
+            </article>
+
+            <article class="categoria">
+                <img src="img/cat-tecnologia.png" alt="Tecnología">
+                <span>Tecnología</span>
+            </article>
+
+            <article class="categoria">
+                <img src="img/cat-limpieza.png" alt="Suministros de limpieza">
+                <span>Suministros de limpieza</span>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- ===================================================
+     PRODUCTOS DESTACADOS / NOVEDADES
+=================================================== -->
+    <section class="productos">
+        <h2>Nuevos productos</h2>
+
+        <div class="grid-productos">
+
+            <article class="producto">
+                <img src="img/prod-silla.png" alt="Silla ergonómica">
+                <h3>Silla ergonómica</h3>
+                <p class="precio">$150.000</p>
+                <a href="#" class="btn btn-azul">Ver más</a>
+            </article>
+
+            <article class="producto">
+                <img src="img/prod-impresora.png" alt="Impresora multifunción HP">
+                <h3>Multifuncional HP</h3>
+                <p class="precio">$450.000</p>
+                <a href="#" class="btn btn-azul">Ver más</a>
+            </article>
+
+            <article class="producto">
+                <img src="img/prod-lapiceros.png" alt="Set de lapiceros">
+                <h3>Set de lapiceros</h3>
+                <p class="precio">$25.000</p>
+                <a href="#" class="btn btn-azul">Ver más</a>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- ===================================================
+     BANNER PROMOCIONAL
+=================================================== -->
+    <section class="banner-descuentos" style="background-image: url('img/banner-descuentos.png');">
+        <h2>Grandes descuentos en material de oficina</h2>
+        <p>Aprovechá nuestras ofertas hoy mismo</p><br>
+        <a href="ofertas.html" class="btn btn-azul">Ver ofertas</a>
+    </section>
+
+    <!-- ===================================================
+     FOOTER
+     También reutilizado en todas las páginas
+=================================================== -->
+    <footer class="footer">
+        <p>© 2025 MundoOficina - Soluciones para tu espacio de trabajo</p>
+    </footer>
+
+</body>
+
+</html>

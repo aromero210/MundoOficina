@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- ===================================================
+         CONFIGURACIÓN BÁSICA DEL DOCUMENTO
+         =================================================== -->
+    <meta charset="UTF-8">
+    <title>MundoOficina | Contacto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===================================================
+         HOJAS DE ESTILO
+         =================================================== -->
+    <link rel="stylesheet" href="estilos.css">
+
+    <!-- Iconos Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ===================================================
+     HEADER / NAVEGACIÓN PRINCIPAL
+     Estructura idéntica al resto del sitio
+=================================================== -->
+    <header class="header">
+        <div class="header-contenido">
+
+            <!-- Logo y nombre de marca -->
+
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="Logo MundoOficina">
+                <span>MundoOficina</span>
+            </a>
+
+            <!-- Menú de navegación -->
+            <nav class="menu" aria-label="Navegación principal">
+                <a href="index.html" title="Inicio">Inicio</a>
+                <a href="productos.html" title="Productos">Productos</a>
+                <a href="ofertas.html" title="Ofertas">Ofertas</a>
+                <a href="nosotros.html" title="Nosotros">Nosotros</a>
+                <a href="contacto.html" class="activo" title="Contacto">Contacto</a>
+            </nav>
+
+            <!-- Acciones rápidas -->
+            <div class="acciones">
+                <a href="#" class="icono" aria-label="Buscar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+                <a href="#" class="icono" aria-label="Cuenta de usuario">
+                    <i class="fa-regular fa-user"></i>
+                </a>
+                <a href="#" class="icono" aria-label="Carrito de compras">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- ===================================================
+     HERO DE CONTACTO
+     Sección introductoria específica de la página
+=================================================== -->
+    <section class="hero-contacto" style="background-image: url('img/hero-contacto.png');">
+        <div class="hero-texto">
+            <h1>Contacto</h1>
+            <p>¿Tenés alguna consulta o necesitás ayuda? Estamos para ayudarte.</p>
+        </div>
+    </section>
+
+    <!-- ===================================================
+     CONTENIDO PRINCIPAL DE CONTACTO
+     Información + formulario
+=================================================== -->
+    <section class="contacto">
+        <div class="contacto-contenido">
+
+            <!-- ===============================================
+             INFORMACIÓN DE CONTACTO
+             =============================================== -->
+            <div class="contacto-info">
+                <h2>Contáctanos</h2>
+
+                <div class="info-item">
+                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                    <div>
+                        <strong>Correo electrónico</strong>
+                        <p>antonellaromero@outlook.es</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                    <div>
+                        <strong>Teléfono</strong>
+                        <p>+54 345 4026008</p>
+                        <small>Atención de 09:00 hs a 20:00 hs</small>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                    <div>
+                        <strong>Dirección</strong>
+                        <p>
+                            Alvear 891, Concordia, Entre Ríos
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Redes sociales -->
+                <div class="redes">
+                    <a href="#" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- ===============================================
+             FORMULARIO DE CONTACTO
+             =============================================== -->
+            <div class="contacto-formulario">
+                <h2>Escribinos</h2>
+
+                <!--
+                Nota:
+                El formulario está preparado para ser conectado
+                a backend o servicio externo en el futuro
+            -->
+                <form action="#" method="post">
+
+                    <input type="text" name="nombre" placeholder="Nombre" required>
+
+                    <input type="email" name="email" placeholder="Correo electrónico" required>
+
+                    <input type="tel" name="telefono" placeholder="Teléfono">
+
+                    <textarea name="mensaje" placeholder="Mensaje" rows="5" required></textarea>
+
+                    <button type="submit" class="btn btn-azul">
+                        Enviar mensaje
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===================================================
+     FOOTER
+=================================================== -->
+    <footer class="footer">
+        <p>© 2025 MundoOficina - Soluciones para tu espacio de trabajo</p>
+    </footer>
+
+</body>
+
+</html>
